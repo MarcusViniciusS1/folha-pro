@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Holerite - Consulta</ion-title>
+    <ion-button fill="clear" slot="end" [routerLink]="['/home']" class="btn">
+      <ion-icon name="arrow-back-outline" class="green-icon"></ion-icon>
+    </ion-button>
+     </ion-toolbar>
+</ion-header>
+<ion-card>
+  <ion-card-header>
+    Selecionar Ano e Mês
+  </ion-card-header>
+  <ion-card-content>
+<ion-list lines="full">
+  <ion-item>
+    <ion-label>Ano</ion-label>
+    <ion-select interface="popover" [(ngModel)]="selectedYear">
+      <ion-select-option value="ano-2019">Ano</ion-select-option>
+      <ion-select-option value="todos">Todos</ion-select-option>
+      <ion-select-option value="ano-2023">2023</ion-select-option>
+      <ion-select-option value="ano-2022">2022</ion-select-option>
+      <ion-select-option value="ano-2021">2021</ion-select-option>
+      <ion-select-option value="ano-2020">2020</ion-select-option>
+      <ion-select-option value="ano-2019">2019</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Mês</ion-label>
+    <ion-select interface="popover" [(ngModel)]="selectedMonth">
+      <ion-select-option value="todos">Mês</ion-select-option>
+      <ion-select-option value="mes-janeiro">Janeiro</ion-select-option>
+      <ion-select-option value="mes-fevereiro">Fevereiro</ion-select-option>
+      <ion-select-option value="mes-marco">Março</ion-select-option>
+      <ion-select-option value="mes-abril">Abril</ion-select-option>
+      <ion-select-option value="mes-maio">Maio</ion-select-option>
+      <ion-select-option value="mes-junho">Junho</ion-select-option>
+      <ion-select-option value="mes-julho">Julho</ion-select-option>
+      <ion-select-option value="mes-agosto">Agosto</ion-select-option>
+      <ion-select-option value="mes-setembro">Setembro</ion-select-option>
+      <ion-select-option value="mes-outubro">Outubro</ion-select-option>
+      <ion-select-option value="mes-novembro">Novembro</ion-select-option>
+      <ion-select-option value="mes-dezembro">Dezembro</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+</ion-card-content>
+</ion-card>
+<ion-button expand="full" color="primary" (click)="navigateToSelectedMonth()">Ir para Data Selecionada</ion-button>
+
+
+
+

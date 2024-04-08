@@ -1,0 +1,52 @@
+/* holerite-page.scss */
+
+ion-content {
+    --ion-background-color: #1d1c1c;
+  }
+  
+  ion-list {
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(82, 82, 82, 0.1);
+    padding: 16px;
+    margin: 16px;
+  }
+  
+  ion-item {
+    --ion-background-color: #f8f8f8;
+    margin-bottom: 12px;
+    border-radius: 8px;
+  }
+  
+  ion-label {
+    color: #333;
+    font-size: 14px;
+  }
+  
+  
+.button {
+  background-color: transparent; /* Define a cor de fundo como transparente */
+  border: none; /* Remove a borda */
+  color: primary; /* Define a cor do texto com base no tema primary */
+  text-align: left; /* Alinhe o texto ao centro */
+  }
+
+  ion-input {
+    --highlight-color-focused: #00ff62; 
+  }
+
+.header-image {
+  width: 200px; 
+  height:70px; 
+}
+#meuBotao {
+  transition: transform 0.2s ease; /* Adiciona uma transição para a propriedade 'transform' */
+}
+
+#meuBotao:active {
+  transform: scale(0.95); /* Reduz o tamanho do botão quando pressionado */
+}
+
+.green-icon {
+  color: green;
+}

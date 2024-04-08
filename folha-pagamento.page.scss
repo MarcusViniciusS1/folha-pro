@@ -1,0 +1,33 @@
+
+ion-content {
+    --ion-background-color: #2b2b2b;
+  }
+  
+  ion-list {
+    color: wheat;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 1px;
+  }
+  
+  ion-item {
+    --ion-background-color: #f8f8f8;
+    margin-bottom: 12px;
+    border-radius: 8px;
+  }
+ 
+.green-icon {
+    color: green;
+  }
+  .custom-button {
+    background: none;
+  }
+  
+  .green-icon {
+    color: green;
+  }
+  * {
+    color: wheat;
+    font-size: medium;
+  }

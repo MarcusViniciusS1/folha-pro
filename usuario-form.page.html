@@ -1,0 +1,37 @@
+///usuario-form.page.html
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Usuário</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Usuário</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-toolbar>
+    <ion-img src="https://github.com/Kelvin2206/Folha-Pro/blob/master/src/assets/logoFolhaPro.png?raw=true" class="header-image"></ion-img>
+  </ion-toolbar>
+  <ion-list>
+    <ion-item class="ttt">
+      <ion-label  position="floating">Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Login</ion-label>
+      <ion-input type="text" [(ngModel)]="login"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" (click)="salvar()">Cadastrar</ion-button>
+  <ion-button expand="full" (click)="entrar()">Entrar</ion-button>
+</ion-content>
